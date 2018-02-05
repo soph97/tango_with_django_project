@@ -1,19 +1,10 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
+		
+{% block title_block %}
+	
+			This tutorial has been put together by Sophie Robinson <br />
 
-
-
-<html>
-<head>	
-		<title>About</title>
-	</head>
-
-	<body>
-
-		This tutorial has been put together by Sophie Robinson <br />
-
-		<img src="{{ MEDIA_URL}}cat.jpg"
-		 alt="Picture of a Cat" />
-	</body>
-
-</html>
+			<img src="{{ MEDIA_URL}}cat.jpg"
+		 		alt="Picture of a Cat" />
+{% endblock %}
