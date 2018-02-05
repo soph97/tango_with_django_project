@@ -41,4 +41,4 @@ def add_category(request):
 
         else:
             print(form.errors)
-    return render(request, 'rango/add_category.html', {'form': form}
+    return render(request, 'rango/add_category.html', {'form': form})
