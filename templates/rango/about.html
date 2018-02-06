@@ -1,10 +1,36 @@
 {% extends 'rango/base.html' %}
-{% load staticfiles %}
-		
-{% block title_block %}
-	
-			This tutorial has been put together by Sophie Robinson <br />
 
-			<img src="{{ MEDIA_URL}}cat.jpg"
-		 		alt="Picture of a Cat" />
-{% endblock %}
+{% load staticfiles %}
+
+
+	{% block title_block %} 
+		 Chapter 4 exercise 
+	{% endblock %}
+
+<br>
+<br>
+<hr>
+	
+	{% block body_block %}
+
+		Number of visits: {{ visits }}
+		
+		<hr>
+		rango says here is the about page
+		<br>
+		This tutorial has been put together by Sophie Robinson
+		
+		<br>
+		<hr>
+
+
+	
+
+		<img src="{{ MEDIA_URL}}cat.jpg" />
+
+
+
+
+	{% endblock %}
+
+</html>
